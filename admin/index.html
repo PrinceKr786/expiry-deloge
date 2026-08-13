@@ -17,7 +17,7 @@
         button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; outline: none; }
         .btn, .t-nav, .m-nav, .refresh-btn, .mobile-nav-toggle, .tb-logout, .app-item, .badge { -webkit-user-select: none; user-select: none; }
         button:active, a:active, .btn:active, .t-nav:active, .m-nav:active, .refresh-btn:active, .mobile-nav-toggle:active, .tb-logout:active { -webkit-tap-highlight-color: transparent; }
-        body { background: #0B0514; min-height: 100vh; color: #fff; }
+        body { background: #0B0514; min-height: 100vh; min-height: 100dvh; color: #fff; }
         ::-webkit-scrollbar { width: 5px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #B366FF; border-radius: 10px; }
@@ -95,7 +95,7 @@
         select { cursor:pointer; color-scheme:dark; }
 
         /* --- MAIN --- */
-        .main-content { margin-top:72px; padding:30px 35px; overflow-y:auto; height:calc(100vh - 72px); background:radial-gradient(ellipse at 20% 20%,rgba(179,102,255,0.03) 0%,transparent 60%); overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
+        .main-content { margin-top:72px; padding:30px 35px 90px; overflow-y:auto; height:calc(100vh - 72px); height:calc(100dvh - 72px); background:radial-gradient(ellipse at 20% 20%,rgba(179,102,255,0.03) 0%,transparent 60%); overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
         .page { display:none; animation:fadeUp 0.4s ease; }
         .page.active { display:block; }
 
@@ -174,7 +174,7 @@
             .tb-user .info { display:none; }
             .tb-user .avatar { width:32px; height:32px; font-size:13px; }
             .tb-logout { width:34px; height:34px; font-size:13px; }
-            .main-content { margin-top:62px; padding:15px; height:calc(100vh - 62px); }
+            .main-content { margin-top:62px; padding:15px 15px 80px; height:calc(100vh - 62px); height:calc(100dvh - 62px); }
             .mobile-nav-dropdown { top:62px; }
             .page-header h2 { font-size:17px; }
             .dash-grid { grid-template-columns:1fr 1fr; gap:12px; }
@@ -190,7 +190,7 @@
             .taskbar-brand .brand-icon { width:30px; height:30px; font-size:14px; }
             .taskbar-brand h1 { font-size:13px; }
             .taskbar-brand span { display:none; }
-            .main-content { margin-top:56px; padding:12px; height:calc(100vh - 56px); }
+            .main-content { margin-top:56px; padding:12px 12px 80px; height:calc(100vh - 56px); height:calc(100dvh - 56px); }
             .mobile-nav-dropdown { top:56px; }
             .dash-grid { grid-template-columns:1fr; gap:10px; }
             .stat-box { padding:16px 14px; }
